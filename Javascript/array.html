@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let city = ["Mumbai","Pune","Nagpur","Satara"];
+        console.log(city);
+        console.log(city.length);
+        console.log(city.length-1);
+        console.log(city[2]);
+        city[2] = "Nagpur";
+
+         city.push("kolhapur","vitthalwadi")
+        console.log(city);
+        city.pop();
+        console.log(city);
+
+        city.unshift("kopar","virar")
+        console.log(city);
+        city.shift();
+        console.log(city);
+
+        city.splice(2,0,"Chinchpokli","Thane");
+        console.log(city);
+        city.splice(3,2);
+        console.log(city);
+
+        city.splice(2,3,"Palghar","Bandra");
+        console.log(city);
+
+        console.log(city.toString());
+        console.log(city.join());
+        console.log(city.join("*"));
+        console.log(city.join(" "));
+
+        for(let i=0;i<city.length;i++){
+            document.write(city[i]+", ")
+        }
+        document.write("<br>");
+        for(let i=city.length-1;i>=0;i--){
+            document.write(city[i]+", ")
+        }
+        document.write("<br>");
+        for(let c of city){
+            document.writeln(c+", ");
+        }
+
+        let boys=["Swapnil","Sumit","Shreyas"];
+        let girls=["Shravani","Tanaya","Rutuja"]
+    
+        
+    </script>
+</body>
+</html>

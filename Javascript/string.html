@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+       <script>
+
+        let msg="welcome you all in cdac Ait.you are all good";
+        document.write(msg,'<br>');
+        document.write(msg.length,'<br>');
+        document.write(msg.toLocaleLowerCase(),'<br>');
+        document.write(msg.toUpperCase(),'<br>');
+        document.write(msg.replace('all',"everyone"),'<br>');
+        document.write(msg.replace(/All/ig,"everyone"),'<br>');
+       // document.write(msg.replaceall('all',"everyone"),'<br>');
+       
+        document.write(msg.charAt(0),'<br>');
+        document.write(msg.charCodeAt(0),'<br>');
+        
+        // firstindexof 
+        document.write(msg.indexOf("you"),'<br>');
+        document.write(msg.indexOf("you",10),'<br>');
+        document.write(msg.indexOf("jatin") ,'<br>');
+        //    lastindexog 
+        document.write(msg.lastIndexOf("all"),'<br>');
+        document.write(msg.lastIndexOf("all",27),'<br>');
+        document.write(msg.lastIndexOf("cdac"),'<br>');
+
+        // search 
+        document.write(msg.search("i"),'<br>');
+
+        // slice 
+        document.write(msg.slice(20),'<br>');
+        document.write(msg.slice(10,30),'<br>');
+        document.write(msg.slice(-20),'<br>');
+        document.write(msg.slice(-20,-3),'<br>');
+
+        // sunString 
+        document.write(msg.substring(14),'<br>');
+        document.write(msg.substring(14,30),'<br>');
+
+        // subStr()
+        document.write(msg.substr(10,20),'<br>');
+
+        // To convert string into array 
+        let friends = "No one told that life was gonna be this way";
+        console.log(friends);
+        console.log(friends.split());
+        console.log(friends.split(' '));
+        
+
+
+</script>
+</body>
+</html>

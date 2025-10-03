@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp ={
+            id:101,
+            name:"Jatin",
+            contact:25451,
+            gender:'Male',
+            address:{
+                city:'Mumbai',
+                pin:421306,
+                state:'Maharashtra'
+            },
+
+            details: function()
+            {
+                return `ID:${this.id}, name:${this.name}, contact:${this.contact}, gender:${this.gender},
+                city:${this.address.state}
+                <br>`
+            }
+        
+        }
+        document.write(`ID:${emp.id}, name:${emp.name}, contact:${emp.contact}, gender:${emp.gender},
+                city:${emp.address.state} <br>`)
+                document.write((emp.details()));
+
+                emp.contact=45878556;
+                document.write(emp.details());
+
+                let fruits=[
+                    {id:1,name:"kairi",price:2000},
+                     {id:2,name:"Mosambi",price:50},
+                     {id:3,name:"sitafal",price:450},
+                     {id:4,name:"kala Jamun",price:80},
+                ];
+
+                for(let i=0;i<fruits.length;i++){
+                    document.write(`ID:${fruits[i].id},NAME:${fruits[i].name},price:${fruits[i].price} <br>`);
+                }
+          document.write(`<br>=====================<br>`)
+                
+          for(let f of fruits){
+            if(f.price <=100){
+                     document.write(`ID:${f.id},NAME:${f.name},price:${f.price} <br>`);
+                }
+            }
+    </script>
+</body>
+</html>

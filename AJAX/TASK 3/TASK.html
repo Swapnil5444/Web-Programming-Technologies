@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="swap.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration Form</h2>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="username">Enter User name</label>
+                    <input type="text" id="username" name="firstName">
+                </div>
+                <!-- <div class="col">
+                    <label for="lastName">Enter Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div> -->
+            </div>
+            <div class="row">
+                <label for="email">Enter Email Id</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="password">Enter Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="col">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                </div>
+            </div>
+            <button type="submit" onclick="register()">Register User</button>
+        </form>
+    </div>
+</body>
+</html>
+<script src="/task.js"></script>

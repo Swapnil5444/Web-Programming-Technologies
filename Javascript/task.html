@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees Details</title>
+</head>
+<body>
+    <script>
+    let employees = [
+  {
+    id: 1,
+    name: "Amit Sharma",
+    post: "Software Engineer",
+    salary: 75000,
+    gender: "Male",
+    age: 28,
+    state: "Maharashtra",
+    bloodGroup: "B+"
+  },
+  {
+    id: 2,
+    name: "Priya Desai",
+    post: "Manager",
+    salary: 68000,
+    gender: "Female",
+    age: 25,
+    state: "Gujarat",
+    bloodGroup: "A+"
+  },
+  {
+    id: 3,
+    name: "Rahul Verma",
+    post: "Backend Developer",
+    salary: 80000,
+    gender: "Male",
+    age: 30,
+    state: "Karnataka",
+    bloodGroup: "O+"
+  },
+  {
+    id: 4,
+    name: "Sneha Joshi",
+    post: "Data Analyst",
+    salary: 70000,
+    gender: "Female",
+    age: 27,
+    state: "Madhya Pradesh",
+    bloodGroup: "AB+"
+  },
+  {
+    id: 5,
+    name: "Vikram Singh",
+    post: "Project Manager",
+    salary: 95000,
+    gender: "Male",
+    age: 75,
+    state: "Rajasthan",
+    bloodGroup: "A-"
+  },
+  {
+    id: 6,
+    name: "Anjali Mehta",
+    post: "HR",
+    salary: 72000,
+    gender: "Female",
+    age: 29,
+    state: "Delhi",
+    bloodGroup: "B-"
+  },
+  {
+    id: 7,
+    name: "Rohit Patil",
+    post: "DevOps Engineer",
+    salary: 85000,
+    gender: "Male",
+    age: 31,
+    state: "Goa",
+    bloodGroup: "O-"
+  },
+  {
+    id: 8,
+    name: "Kavita Iyer",
+    post: "AI Researcher",
+    salary: 90000,
+    gender: "Female",
+    age: 26,
+    state: "Tamil Nadu",
+    bloodGroup: "AB-"
+  },
+  {
+    id: 9,
+    name: "Manish Tiwari",
+    post: "System Administrator",
+    salary: 67000,
+    gender: "Male",
+    age: 33,
+    state: "Uttar Pradesh",
+    bloodGroup: "B+"
+  },
+  {
+    id: 10,
+    name: "Neha Kapoor",
+    post: "Frontend Developer",
+    salary: 71000,
+    gender: "Female",
+    age: 24,
+    state: "Punjab",
+    bloodGroup: "A+"
+  }
+ ];
+
+document.write("<br>=====================================</br>")
+
+for(let e of employees){
+document.write(`ID:${e.id}, name:${e.name}, post:${e.post}, salary:${e.salary} gender:${e.gender},
+                age:${e.age},state:${e.state},bloodGroup:${e.bloodGroup}
+                <br>`);
+}
+
+document.write("<br>=====================================</br>")
+for(let e of employees){
+if(e.gender=="Female"){
+document.write(`ID:${e.id}, name:${e.name}, post:${e.post}, salary:${e.salary} gender:${e.gender},
+                age:${e.age},state:${e.state},bloodGroup:${e.bloodGroup}
+                <br>`);
+}
+}
+
+document.write("<br>=====================================</br>")
+for(let e of employees){
+if(e.salary>30000 && e.salary<70000){
+document.write(`ID:${e.id}, name:${e.name}, post:${e.post}, salary:${e.salary} gender:${e.gender},
+                age:${e.age},state:${e.state},bloodGroup:${e.bloodGroup}
+                <br>`);
+}
+}
+
+document.write("<br>=====================================</br>")
+for(let e of employees){
+if(e.post=="HR" || e.post=="Manager"){
+document.write(`ID:${e.id}, name:${e.name}, post:${e.post}, salary:${e.salary} gender:${e.gender},
+                age:${e.age},state:${e.state},bloodGroup:${e.bloodGroup}
+                <br>`);
+     }
+}
+
+document.write("<br>=====================================</br>")
+for(let e of employees){
+if(e.age > 55){
+document.write(`ID:${e.id}, name:${e.name}, post:${e.post}, salary:${e.salary} gender:${e.gender},
+                age:${e.age},state:${e.state},bloodGroup:${e.bloodGroup}
+                <br>`);
+     }
+}
+
+document.write("<br>=====================================</br>")
+for(let e of employees){
+if(e.bloodGroup =="O+"){
+document.write(`ID:${e.id}, name:${e.name}, post:${e.post}, salary:${e.salary} gender:${e.gender},
+                age:${e.age},state:${e.state},bloodGroup:${e.bloodGroup}
+                <br>`);
+     }
+}
+
+</script>
+
+</body>
+</html>

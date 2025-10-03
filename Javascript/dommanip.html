@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+
+<div id="d1">
+    <p id="p1">this is para-1</p>
+    <p id="p2">this is para-2</p>
+</div>
+
+<hr>
+
+<ul id="d2"></ul>
+
+<script>
+    // Get parent div
+    let parentel = document.getElementById("d1");
+    console.log(parentel);
+
+    // Create new element <p>
+    let newPara = document.createElement("p");
+
+    // Set attribute (id)
+    newPara.setAttribute("id", "p3");
+
+    // Insert text inside element
+    newPara.innerText = "this is para-3";
+
+    // OR add HTML inside
+    // newPara.innerHTML = "<span>this is para-3</span>";
+
+    // Append to parent div
+    parentel.appendChild(newPara);
+
+    // Array of courses
+    let courses = ["HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT", "REACT", "ANGULAR"];
+
+    // Get parent <ul>
+    let parentul = document.getElementById("d2");
+
+    // Loop through courses
+    for (let c of courses) {
+        let newli = document.createElement("li"); // not "11"
+        newli.innerText = c;
+        parentul.appendChild(newli);
+    }
+</script>
+
+</body>
+</html>

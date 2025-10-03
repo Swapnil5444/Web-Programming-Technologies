@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace words</title>
+   
+    <style>
+        #body{
+           margin-left: 15%;
+           margin-top: 5%;
+            background-color: rgb(33, 36, 28);
+        }
+        #d1,#d2 {
+            margin: 40px;
+            border: 5px double white;
+            overflow: auto;
+            height: 200px;
+            width: 250px;
+            padding: 50px;
+            border-radius: 20px;
+            background-color:lab(54.83% 82.73 12.41);
+            float: left;
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+           
+        }
+
+
+    </style>
+</head>
+
+
+<body id="body">
+   
+        <div id="d1"> Welcome  all in YCP AIT. Good morning all . </div>
+<div id="d2">
+        <label for="">Enter text to Replace:</label>
+        <input type="text"  id="replaceword"><br>
+       
+
+
+        <label for="">Enter New text:</label>
+        <input type="text"  id="newword"><br>
+
+
+        <button type="button" onclick="Replace()">replace</button>
+        <button type="button" onclick="Replaceall()">replace all</button>
+    </label>
+</div>
+   
+<script>
+    let msg= " Welcome  all in YCP AIT. Good morning all . " ;
+    function Replace(){
+        let oldtext = document.getElementById("replaceword").value;
+        let newtext = document.getElementById("newword").value;
+        document.getElementById("d1").innerText =msg.replace(oldtext,newtext);
+       
+    }
+   
+        function Replaceall(){
+        let oldtext = document.getElementById("replaceword").value;
+        let newtext = document.getElementById("newword").value;
+        document.getElementById("d1").innerText =msg.replaceAll(oldtext,newtext);
+        }
+        </script>
+
+
+</body>
+
+
+</html>

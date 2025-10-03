@@ -1,0 +1,39 @@
+.cls1{
+    color: crimson;
+    font-size: 25px;
+    background-color: darksalmon;
+}
+
+.border-prop{
+    border-style: dotted;
+    border-color: turquoise;
+    border-width: 8px;
+    border: 8px dotted turquoise;
+    width: 70%;
+    border-radius: 25px;
+}
+
+.box-model{
+    border: 2px solid red;
+    width: 91px;
+    font-size: 20px;
+    padding: 10px 20px 30px;
+    border-width: 10px 20px 30px 40px;
+    margin: 10px 20px 30px 40px;
+}
+
+.circle{
+    border: 3px solid green;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: orange;
+    margin: auto;
+}
+
+.img{
+    visibility: hidden;
+    display: none;
+}
+    

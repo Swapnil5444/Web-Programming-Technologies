@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tasks</title>
+  <style>
+    .linked-images img {
+      margin: 5px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .linked-images img:hover {
+      border-color: #007BFF;
+    }
+
+    #description-box {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Task 1: Display 5 Scrolling Images</h2>
+
+<marquee behavior="scroll" direction="left" scrollamount="5">
+  <img src="https://picsum.photos/id/1011/150/100" width="150" height="100" alt="Image 1">
+  <img src="https://picsum.photos/id/1015/150/100" width="150" height="100" alt="Image 2">
+  <img src="https://picsum.photos/id/1016/150/100" width="150" height="100" alt="Image 3">
+  <img src="https://picsum.photos/id/1024/150/100" width="150" height="100" alt="Image 4">
+  <img src="https://picsum.photos/id/1027/150/100" width="150" height="100" alt="Image 5">
+</marquee>
+
+<h2>Task 2: Create 10 Images as Links with Description on Click</h2>
+
+<div class="linked-images">
+  <img src="https://picsum.photos/id/1035/120/80" alt="Beach" onclick="showDescription('A calm beach with crystal clear water.')">
+  <img src="https://picsum.photos/id/1041/120/80" alt="Mountains" onclick="showDescription('Snow-covered mountains under a blue sky.')">
+  <img src="https://picsum.photos/id/1043/120/80" alt="Forest" onclick="showDescription('A dense green forest with tall trees.')">
+  <img src="https://picsum.photos/id/1045/120/80" alt="City" onclick="showDescription('A bustling city skyline at night.')">
+  <img src="https://picsum.photos/id/1049/120/80" alt="Lake" onclick="showDescription('A peaceful lake surrounded by hills.')">
+  <img src="https://picsum.photos/id/1052/120/80" alt="Bridge" onclick="showDescription('A modern bridge across a wide river.')">
+  <img src="https://picsum.photos/id/1062/120/80" alt="Desert" onclick="showDescription('Sandy desert dunes under the sun.')">
+  <img src="https://picsum.photos/id/1071/120/80" alt="Field" onclick="showDescription('Golden wheat fields under clear skies.')">
+  <img src="https://picsum.photos/id/1080/120/80" alt="Island" onclick="showDescription('A tropical island with palm trees.')">
+  <img src="https://picsum.photos/id/1084/120/80" alt="River" onclick="showDescription('A flowing river cutting through a valley.')">
+</div>
+
+<div id="description-box">
+  <strong>Click on an image to see its description.</strong>
+</div>
+
+<script>
+  function showDescription(text) {
+    document.getElementById('description-box').innerHTML = '<strong>Description:</strong> ' + text;
+  }
+</script>
+
+</body>
+</html>
+

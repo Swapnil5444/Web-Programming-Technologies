@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let courses = ["React","Java","Python","Javascript"]
+        // const sub1 = courses[0];
+        // const sub2 = courses[1];
+        // const sub3 = courses[2];
+        // const sub4 = courses[3];
+// ------------Alternate way of writing above code-------------------
+        const[sub1, sub2, sub3, sub4] = courses;
+        document.write(sub1,sub2,sub3,sub4);
+
+        let emp = {
+            id:101,
+            name:"Bob",
+            post:"CEO",
+            address:"USA"
+        }
+
+        // const empid = emp.id;
+        // const empName = emp.name;
+        // const empPost = emp.post;
+        // const empAddress = emp.address;
+// ------------Alternate way of writing above code-------------------
+        const{id,name,post,address} = emp;
+    </script>
+
+</body>
+</html>

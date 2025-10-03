@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Example</title>
+</head>
+<body>
+    <h1>Browser Object Model Example</h1>
+
+    <script>
+        //Using window object methods
+        window.alert("Welcome to the BOM example!");
+
+        //Accessing window properties
+        console.log("Window inner width:",window.innerWidth);
+        console.log("Window inner height:",window.innerHeight);
+
+        //Using location object to get current URL
+        console.log("Current URL:",window.location.href);
+
+        //Using navigator object to get browser info
+        console.log("Browser User Agent:",window.navigator.userAgent);
+
+        //Using a timer from the window object
+        setTimeout(()=>{
+            console.log("This message appeared after 3 seconds.");
+        },3000);
+    </script>
+</body>
+</html>

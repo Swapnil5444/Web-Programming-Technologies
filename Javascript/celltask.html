@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell span</title>
+    <link rel="stylesheet" href="celltask.css">
+</head>
+<body>
+    <div class="tables">
+        <form action="">
+        <table class="tab" border="5px">
+            <tr>
+                <td id="1">1</td>
+                <td id="2">2</td>
+                <td id="3">3</td>
+            </tr>
+            <tr>
+                <td id="4">4</td>
+                <td id="5">5</td>
+                <td id="6">6</td>
+
+            </tr>
+            <tr>
+                <td id="7">7</td>
+                <td id="8">8</td>
+                <td id="9">9</td>
+            </tr>
+        </table>
+        <br><br>
+        <label for="cell"> Eneter Cell Number</label>
+        <input type="text"  id="cell">
+        <br><br>
+        <label for="color">Select Colour: </label>
+        <input id="col" type="color">
+
+        <br><br>
+        <button type="button" onclick="changeCol()">Change Background colour</button>
+    
+    </form>
+</div>
+    <script>
+        function changeCol(){
+            let n=document.getElementById("cell").value;
+            let c=document.getElementById("col").value;
+            // n=parseInt(n);
+            if(n>9 || n<1){
+                alert("Please enter valid cell number");
+                return;
+            }else{
+            document.getElementById(n).style.backgroundColor=c;
+        }
+    }
+
+    </script>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Image</title>
+<style>
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+margin: 0;
+background-color: #f0f8ff;
+}
+img {
+display: block;
+margin: 20px auto;
+border-radius: 10px;
+box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+h2 {
+text-align: center;
+font-family: Arial, sans-serif;
+color: #333;
+}
+button {
+margin: 5px;
+padding: 8px 16px;
+border: none;
+border-radius: 5px;
+background-color: #4CAF50;
+color: white;
+cursor: pointer;
+}
+button:hover {
+background-color: #45a049;
+}
+</style>
+</head>  
+<body>
+<img id="d4" src="../asset/images/Amit-Shah-thmni.jpg" height="300px" width="300px" alt="">
+<h2 id="s1">Amit Shah</h2>
+<button type="button" onclick="toggleImg()">Toggle image</button>
+<script>
+const images = [
+{ src: "../asset/images/apj.jpg", text: "APJ Abdul Kalam" },
+{ src: "../asset/images/shrey.jpg", text: "Shreyas" }
+];
+let index = 0;
+function toggleImg() {
+index = (index + 1) % images.length; 
+document.getElementById("d4").src = images[index].src;
+document.getElementById("s1").innerHTML = images[index].text;
+}
+</script>
+</body>
+</html> 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="justify-content: center;">
+        <form action="" >
+            <label for="">Enter name</label>
+            <br>
+            <input id="name" type="text" placeholder="Name">
+            <br><br>
+            <label for="">Enter Password</label>
+            <br>
+            <input id="pass" type="password" onblur=" checks()" placeholder="password">
+            
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script >
+        function checks(){
+    let n=document.getElementById("name").value;
+    let p=document.getElementById("pass").value.trim();
+    let pat = /^[a-zA-Z]{3,10}$/;
+    
+    
+    if(!n.match(pat)){
+        window.alert("Invalid Name");
+        return false;
+    }
+
+    if(p.length<6){
+        window.alert("Password must be atleast 6 digits");
+        return false;
+    }
+
+  
+
+};
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Validation with onblur</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+
+    input {
+      padding: 8px;
+      width: 300px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Registration</h2>
+
+  <form>
+    <label for="password">Enter Password:</label><br>
+    <input type="password" id="password" onblur="validatePassword()"><br>
+    <span id="passwordError" class="error"></span>
+  </form>
+
+  <script>
+    function validatePassword() {
+      const password = document.getElementById("password").value;
+      const errorSpan = document.getElementById("passwordError");
+
+      // Clear previous error
+      errorSpan.innerText = "";
+
+      // Validation: at least 6 characters, contains letter and number
+      const minLength = 6;
+      const hasLetter = /[a-zA-Z]/.test(password);
+      const hasNumber = /[0-9]/.test(password);
+
+      if (password.length < minLength) {
+        errorSpan.innerText = "Password must be at least 6 characters.";
+      } else if (!hasLetter || !hasNumber) {
+        errorSpan.innerText = "Password must contain both letters and numbers.";
+      }
+    }
+  </script>
+
+</body>
+</html>
+  -->

@@ -1,0 +1,24 @@
+4/4/2025
+
+Step1: install  xampp 
+step2: start Apache and Mysql 
+step3: create data database(myproject) and table(products) in phpmyAdmin
+step4: insert data into table(products)
+step5: we create folder for creating rest api 
+step6: open folder in vs code editor 
+step7: create package.json file , write bellow command in terminal
+       npm init or npm  init -y
+step8: install mysql by using npm 
+       npm install mysql
+step9: create index.js for creating connecton and to test it.
+step10: create a separate connection.js file to keep mysql connection code in it.
+step11: to create server and to handle multiple request install express in project folder         
+        npm i express      
+step12: write a logic to fetch data by using get request for product.
+step13: write a logic to delete  data by using delete request for product.
+step14: write a logic to add data by using post request for product.
+step15: install bodyParser middleware which help us to get json and urlencoded data.
+         npm i body-parser
+
+
+Task1: create table in phpmyAdmin with name Employee with columan id, empname,empost,empsalary,empaddress,empcontact and create REST API for get,delete,post,and put for Employee table. 

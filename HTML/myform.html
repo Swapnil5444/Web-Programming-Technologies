@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+            background-size: cover;
+            background-position: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+       button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+       <h1>User Form</h1>
+
+       <label for="txtName">Enter Your Full Name:</label>
+       <input type="text" name="fname" id="txtName" placeholder="Enter your full name" minlength="3" maxlength="20" pattern="^[a-zA-Z ]{3,20}$" required>
+
+       <label for="txtpass">Enter Your Password:</label>
+       <input type="password" name="upass" id="txtpass" required>
+      
+       <label for="uemail">Enter your Email:</label>
+       <input type="email" name="uemail" id="uemail" required>
+       
+       <label for="ucontact">Enter your Contact Number:</label>
+       <input type="tel" name="ucontact" pattern="^[789]\d{9}$" required>
+
+       <label for="udob">Select DOB:</label>
+       <input type="date" name="udob" id="udob" required>
+       
+       <label>Select Your Gender:</label>
+       <input type="radio" name="gender" value="male" checked required>Male
+       <input type="radio" name="gender" value="female" required>Female
+       <input type="radio" name="gender" value="transgender" required>Transgender
+      
+       <label>Select Your Qualification:</label>
+       <input type="checkbox" name="edu" value="ssc">SSC 
+       <input type="checkbox" name="edu" value="hsc">HSC 
+       <input type="checkbox" name="edu" value="ug">UG 
+       <input type="checkbox" name="edu" value="pg">PG 
+      
+       <label>Select Your Course:</label>
+       <select name="ucourses">
+         <option value="">Select Your Course</option>
+         <option value="html">HTML</option>
+         <option value="css">CSS</option>
+         <option value="javascript">JavaScript</option>
+         <option value="react">React</option>
+       </select>
+      
+       <label>Course Fees:</label>
+       <input type="text" name="ufees" value="10000" readonly disabled required>
+       
+       <label>Upload your Profile:</label>
+       <input type="file" name="uprofile" accept=".png,.pdf" required>
+
+       <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+
+
+
+

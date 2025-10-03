@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="d1"></h1>
+    <h1 id="d2"></h1>
+    <h1 id="d3"></h1>
+    
+    
+    <script>
+        document.write("Welcome in javascript session <br>" );
+        document.write(20 + 30)
+
+        window.alert("window statement")
+        window.alert(3*2)
+
+        console.log("testing in console")
+        console.log(100-20)
+
+        document.getElementById('d1').innerHTML="Jatin singh";
+
+        // variables in js
+        let yourData;  //variable declaration
+        yourData = 100;
+        yourData = 'YCP';
+        yourData=true;
+
+        // data types in js 
+        // primitive or in-built data type 
+         //  1.number datatype 
+        let num1=123, num2=0.2, num3=123478;
+        // 2. string datatype 
+        let fname="Jatin", lname="Singh";
+        // 3. boolean data types 
+        let cond1 = true , cond2 = false;
+        // 4. datatype undefined 
+        let info;
+        // 5. null datatype : variable which has no value or is empty,it never allow to store garbage value
+        let data1=null;
+
+        // non-primitive data or user define data types
+        // array data type 
+        let fruits=["apple","mango","grapes","Banana"];
+        // object data type 
+        let emp={id:101,name:"Jatin",post:"CEO"};
+
+        console.log(num1,num2,num3,fname,lname,cond1,cond2,info,data1,fruits,emp);
+
+        
+</script>
+</body>
+</html>

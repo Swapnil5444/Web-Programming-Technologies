@@ -1,0 +1,28 @@
+step 1:Create package.json
+npm init
+or
+npm init -y
+
+Step 2: Install express.js
+npm i express
+
+Step 3: Install .env
+npm i dotenv --save
+-create .env file and save credentials in it.
+
+step 4: Create server file by using express js and execute it. 
+
+step 5:create public folder 
+       html folder
+       css folder
+           style.css file
+       js folder
+            help.js
+       image folder
+
+how to server static file on browser by using express.static middleware templates engines :
+
+In web development on server template engine is use to make application dynamic.
+ex:jade,hbs,ejs.
+
+npm install hbs

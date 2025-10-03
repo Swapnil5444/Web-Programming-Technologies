@@ -1,0 +1,17 @@
+.myForm{
+    border:5 px solid blue;
+    width:300px;
+    padding:10px;
+    text-align:center;
+    border-radius:5px;
+    margin:auto;
+    box-shadow: 7px 6px 8px black;
+}
+
+.myForm input{
+    display:block;
+    width:200px;
+    height:25px;
+    font-size:20px;
+    margin:5px;
+}

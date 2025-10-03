@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./employee.css"> 
+   <title>Employee Details</title>
+</head>
+<body>
+    
+    <div class="container mt-3 mb-2 bg-info">
+      <button type="button" onclick="getData()" class="btn btn-warning mt-2">get data</button>
+     <table class="table table-hover table-bordered table-stripred">
+     <thead>
+        <tr class="table-primary">
+            <th>Id</th><th>Name</th><th>Position</th><th>Salary</th>
+        </tr>
+     </thead>
+     <tbody id="d1">
+
+     </tbody>
+     </table>
+     
+     <div class="row">
+        <div class="col-sm-4 myborder">
+            <label for="" class="form-lable">Enter Employee Id to delete Employee:</label>
+            <input type="text" id="eid" name="EmployeeId" class="form-control" placeholder="enter employee id">
+          <button type="button" onclick="deleteEmployee()" class="btn btn-danger mt-2">Delete Employee</button>
+        
+        </div>
+        <div class="col-sm-4 myborder">
+            <h4>Add  Details</h4>
+          <form>
+            <input type="text" id="txtname" name="ename" placeholder="enter employee name" class="form-control mb-1" required> 
+            <input type="text" id="txtpost" name="epost" placeholder="enter employee Position" class="form-control mb-1" required>
+            <input type="text" id="txtsalary" name="esalary" placeholder="enter employee Salary" class="form-control mb-1" required>
+           <button type="button" onclick="addEmployee()" class="btn btn-primary">Add Employee</button> 
+        </form>
+        </div>
+        <div class="col-sm-4 myborder">
+            <h4>Update Employee</h4>
+            <input type="text" id="ueid" name="eid" class="form-control" >
+            <button type="button" onclick="getSingleEmployee()" class="btn btn-primary">Get Employee Details</button>
+           <hr>
+            <form>
+            <input type="text" id="utxtname" name="ename" placeholder="enter employee name" class="form-control mb-1" required> 
+            <input type="text" id="utxtpost" name="epost" placeholder="enter employee position" class="form-control mb-1" required>
+            <input type="text" id="utxtsalary" name="esalary" placeholder="enter employee salary company" class="form-control mb-1" required>
+           <button type="button" onclick="updateEmployee()" class="btn btn-primary">Add Employee</button> 
+        </form>
+        </div>
+     </div>
+
+
+    </div>
+    <script src="./employee.js"></script>
+</body>
+</html>

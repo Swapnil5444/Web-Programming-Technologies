@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Table</title>
+</head>
+<body>
+    <h2>Employee Details</h2>
+  <table border="1" id="empTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Post</th>
+        <th>Salary</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>State</th>
+        <th>Blood Group</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+ <script>
+    let employees = [
+  {
+    id: 1,
+    name: "Amit Sharma",
+    post: "Software Engineer",
+    salary: 75000,
+    gender: "Male",
+    age: 28,
+    state: "Maharashtra",
+    bloodGroup: "B+"
+  },
+  {
+    id: 2,
+    name: "Priya Desai",
+    post: "Manager",
+    salary: 68000,
+    gender: "Female",
+    age: 25,
+    state: "Gujarat",
+    bloodGroup: "A+"
+  },
+  {
+    id: 3,
+    name: "Rahul Verma",
+    post: "Backend Developer",
+    salary: 80000,
+    gender: "Male",
+    age: 30,
+    state: "Karnataka",
+    bloodGroup: "O+"
+  },
+  {
+    id: 4,
+    name: "Sneha Joshi",
+    post: "Data Analyst",
+    salary: 70000,
+    gender: "Female",
+    age: 27,
+    state: "Madhya Pradesh",
+    bloodGroup: "AB+"
+  },
+  {
+    id: 5,
+    name: "Vikram Singh",
+    post: "Project Manager",
+    salary: 95000,
+    gender: "Male",
+    age: 75,
+    state: "Rajasthan",
+    bloodGroup: "A-"
+  },
+  {
+    id: 6,
+    name: "Anjali Mehta",
+    post: "HR",
+    salary: 72000,
+    gender: "Female",
+    age: 29,
+    state: "Delhi",
+    bloodGroup: "B-"
+  },
+  {
+    id: 7,
+    name: "Rohit Patil",
+    post: "DevOps Engineer",
+    salary: 85000,
+    gender: "Male",
+    age: 31,
+    state: "Goa",
+    bloodGroup: "O-"
+  },
+  {
+    id: 8,
+    name: "Kavita Iyer",
+    post: "AI Researcher",
+    salary: 90000,
+    gender: "Female",
+    age: 26,
+    state: "Tamil Nadu",
+    bloodGroup: "AB-"
+  },
+  {
+    id: 9,
+    name: "Manish Tiwari",
+    post: "System Administrator",
+    salary: 67000,
+    gender: "Male",
+    age: 33,
+    state: "Uttar Pradesh",
+    bloodGroup: "B+"
+  },
+  {
+    id: 10,
+    name: "Neha Kapoor",
+    post: "Frontend Developer",
+    salary: 71000,
+    gender: "Female",
+    age: 24,
+    state: "Punjab",
+    bloodGroup: "A+"
+  }
+ ];
+    // Step 2: Get table body
+    let tbody = document.querySelector("#empTable tbody");
+
+
+    // Step 3: Loop through employees and add rows
+    employees.forEach(emp => {
+      let row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${emp.id}</td>
+        <td>${emp.name}</td>
+        <td>${emp.post}</td>
+        <td>${emp.salary}</td>
+        <td>${emp.gender}</td>
+        <td>${emp.age}</td>
+        <td>${emp.state}</td>
+        <td>${emp.bloodGroup}</td>
+      `;
+      tbody.appendChild(row);
+    });
+
+</script>
+</body>
+</html>

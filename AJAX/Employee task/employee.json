@@ -1,0 +1,64 @@
+{
+  "employees": [
+    {
+      "ename": "Aarav Sharma",
+      "position": "Software Engineer",
+      "salary": 85000,
+      "id": 101
+    },
+    {
+      "ename": "Meera Kapoor",
+      "position": "Project Manager",
+      "salary": 120000,
+      "id": 102
+    },
+    {
+      "ename": "Rohan Mehta",
+      "position": "Data Analyst",
+      "salary": 75000,
+      "id": 103
+    },
+    {
+      "ename": "Sneha Iyer",
+      "position": "UI/UX Designer",
+      "salary": 70000,
+      "id": 104
+    },
+    {
+      "ename": "Devansh Verma",
+      "position": "System Administrator",
+      "salary": 65000,
+      "id": 105
+    },
+    {
+      "ename": "Pooja Nair",
+      "position": "HR Manager",
+      "salary": 80000,
+      "id": 106
+    },
+    {
+      "ename": "Karan Joshi",
+      "position": "QA Engineer",
+      "salary": 60000,
+      "id": 107
+    },
+    {
+      "ename": "Ananya Rao",
+      "position": "Business Analyst",
+      "salary": 78000,
+      "id": 108
+    },
+    {
+      "ename": "Vikram Singh",
+      "position": "DevOps Engineer",
+      "salary": 90000,
+      "id": 109
+    },
+    {
+      "ename": "Tanya Bhatia",
+      "position": "Technical Writer",
+      "salary": 55000,
+      "id": 110
+    }
+  ]
+}

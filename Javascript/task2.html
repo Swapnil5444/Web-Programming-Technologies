@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation Example</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    input, select {
+      margin: 5px 0;
+      padding: 8px;
+      width: 300px;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form onsubmit="return validateForm()">
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br>
+    <span id="emailError" class="error"></span><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br>
+    <span id="passwordError" class="error"></span><br>
+
+    <label>Contact Number:</label><br>
+    <input type="text" id="contact"><br>
+    <span id="contactError" class="error"></span><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female<br>
+    <span id="genderError" class="error"></span><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <script>
+    function validateForm() {
+      // Clear all error messages first
+      document.getElementById("emailError").innerText = "";
+      document.getElementById("passwordError").innerText = "";
+      document.getElementById("contactError").innerText = "";
+      document.getElementById("genderError").innerText = "";
+
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("password").value.trim();
+      let contact = document.getElementById("contact").value.trim();
+      let gender = document.querySelector('input[name="gender"]:checked');
+
+      let isValid = true;
+
+      // Email validation
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+      if (!emailPattern.test(email)) {
+        document.getElementById("emailError").innerText = "Invalid email format.";
+        isValid = false;
+      }
+
+      // Password validation (min 6 characters)
+      if (password.length < 6) {
+        document.getElementById("passwordError").innerText = "Password must be at least 6 characters.";
+        isValid = false;
+      }
+
+      // Contact validation (10 digits only)
+      const contactPattern = /^[0-9]{10}$/;
+      if (!contactPattern.test(contact)) {
+        document.getElementById("contactError").innerText = "Contact must be 10 digits.";
+        isValid = false;
+      }
+
+      // Gender validation
+      if (!gender) {
+        document.getElementById("genderError").innerText = "Please select a gender.";
+        isValid = false;
+      }
+
+      return isValid; // Prevent submission if any field is invalid
+    }
+  </script>
+
+</body>
+</html>

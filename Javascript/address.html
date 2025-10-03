@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:greenyellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      background: #5b1e01;
+      padding: 20px;
+      border: 2px solid #cf2121;
+      border-radius: 8px;
+    }
+
+    .address-box {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    textarea {
+      width: 220px;
+      height: 120px;
+      padding: 10px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      resize: none;
+      font-size: 14px;
+    }
+
+    .button-box {
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      background-color: #e5e5e5;
+      border: 2px solid #333;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+     <div class="container">
+        <div class="address-box">
+        <label for="permanent">Permanent Address</label>
+        <textarea id="permanent" placeholder="Enter your permanent address"></textarea>
+        </div>
+
+        
+        <div class="button-box">
+        <button onclick="copyAddress()">Same As Permanent</button>
+        </div>
+
+
+        <div class="address-box">
+        <label for="temporary">Temporary Address</label>
+        <textarea id="temporary"></textarea>
+        </div>
+  </div>
+
+    <script>
+        function copyAddress() {
+        var permanentAddress = document.getElementById("permanent").value;
+        document.getElementById("temporary").value = permanentAddress;
+        }
+    </script>
+</body>
+</html>

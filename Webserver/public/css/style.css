@@ -1,0 +1,21 @@
+
+
+.myheading{
+    color: red;
+    text-align:center;
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+.my-heading:hover{
+    background-color: black;
+    color:white;
+}
+
+.my-info{
+    color: green;
+    font-size: 20px;
+    font-family:cursive;
+    text-align:center;
+    background-color: rgb(242, 235, 33) ;
+}

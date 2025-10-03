@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <style>
+  .mypara{
+    border: 3px solid green;
+    font-size:20px;
+    text-align:justify;
+  }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn11">Slideup</button>
+    <button type="button" id="btn12">SlideDown</button>
+    <button type="button" id="btn13">SlideTogg</button>
+<p class="mypara" id="123">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ratione enim eligendi necessitatibus dignissimos vel, itaque facere, ipsa atque quisquam corrupti, odit pariatur optio? Esse natus libero laborum quia culpa! Quia, vero enim consectetur pariatur dolor quos magnam ut modi eligendi nostrum laborum iure eos. Adipisci at ipsam dolorem distinctio dolor. Repudiandae fuga asperiores recusandae, accusamus odit quis neque esse necessitatibus quod animi architecto exercitationem quidem. Odit porro provident ad placeat? Quam fugiat dicta sequi nesciunt aut, qui possimus aliquid recusandae est assumenda esse voluptatibus unde quia mollitia culpa, odit consectetur repellat sapiente fugit omnis eveniet libero reprehenderit. Nesciunt, aliquid.</p>
+
+
+    <button type="button" id="btn1">Hide</button>
+    <button type="button" id="btn2">Show</button>
+    <button type="button" id="btn3">Toggle</button><br>
+    <img src="../asset/images/samosa-recipe.jpg" id="vdo" alt="" height="500px" width="500px">
+
+   <br>
+    <button type="button" id="btn21">FadeIn</button>
+    <button type="button" id="btn22">FadeOut</button>
+    <button type="button" id="btn23">Fade Toggle</button><br>
+    <img src="../asset/images/shrey.jpg" id="1234" alt="">
+
+
+
+    <script>
+         $(document).ready(function (){
+            $('#btn1').click(function(){
+                $('#vdo').hide(3000,()=>window.alert('Image hide successfully'));
+            })
+            $('#btn2').click(()=>{
+                $('#vdo').show(3000,()=>window.alert('Image show successfully'));
+            })
+            $('#btn3').click(()=>{
+                $('#vdo').toggle(10000);
+            })
+
+            $('#btn11').click(function(){
+                $('#123').slideUp(3000);
+            })
+            $('#btn12').click(()=>{
+                $('#123').slideDown(3000);
+            })
+            $('#btn13').click(()=>{
+                $('#123').slideToggle(3000);
+            })
+
+             $('#btn22').click(function(){
+                $('#1234').fadeOut(3000);
+            })
+            $('#btn21').click(()=>{
+                $('#1234').fadeIn(3000);
+            })
+            $('#btn23').click(()=>{
+                $('#1234').fadeToggle(3000);
+            })
+
+
+        });
+ </script>
+</body>
+</html>

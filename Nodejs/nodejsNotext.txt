@@ -1,0 +1,73 @@
+
+28/9/25
+
+*introduction of nodejs 
+*advantages of nodejs 
+*REPL environment 
+
+*how to enter into REPL environment
+open command promt and write node( press enter)
+*to come Out From REPL environment 
+use Ctr+D 
+
+*how to save repl environment code into file 
+.save fileName
+
+*how to load js file code into REPL environment 
+.load fileName 
+
+
+*core Module:
+-module provided by nodejs.
+-to use it first we have import it 
+const variableName = require('ModuleName');
+
+__dirname: it provide current directory path.
+__filename: it provide current file path.
+
+Task1: create new js. file with name areaofcircle and write logic in it to calculate area of circle and export it in another file as local module.
+
+Task2: create new js. file with name cubeofNumner and write logic in it to cube of any number and export it in another file as local module.
+
+Task3: create new js. file with name finNumber  and write logic to find whether number is even or odd and print as it is even or odd number and export it in another file as local module.
+O/p 
+2 is even number 
+3 is Odd number 
+
+
+*NPM(Node Package Manager):
+-it is an online repository from where you can install ,update and unistall nodejs modules(packages).
+
+*how to create package.json file 
+npm init 
+npm init -y
+
+-node-modules:all thiredparty dependenies install here.
+-package.json : it keep entries of all install dependenies.
+-package-lock.json: it contain detail description of install dependenies.
+
+
+thired party module 
+*chalk 
+npm install chalk
+*validators 
+npm i validator
+
+*prompt: 
+-it allows user to take input values from terminal in nodejs
+npm i prompt 
+
+*What is blocking code
+*What is non-blocking code
+*callback function 
+*What is event 
+
+*File operation : creating ,reading and deleting file by using Synchronous and Asynchronous method.
+
+-to perform fil related operation we use fs module 
+
+Task: write logiv to delete derectory having file in it asynchronously.
+
+*http module:
+-in nodejs it is use to create server 
+
